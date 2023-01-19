@@ -106,6 +106,9 @@ body {
   flex-shrink: 0;
 }
 .have-fun-answering {
+  display: block;
+}
+.have-fun-answering-container {
   margin: 0;
   align-self: stretch;
   position: relative;
@@ -149,9 +152,6 @@ body {
   width: 291px;
   height: 42px;
   flex-shrink: 0;
-}
-.set-a-duration {
-  display: block;
 }
 .group-container {
   align-self: stretch;
@@ -427,7 +427,7 @@ body {
     font-size: var(--font-size-base);
     text-align: left;
   }
-  .have-fun-answering {
+  .have-fun-answering-container {
     font-size: var(--font-size-xs);
   }
   .group-parent {
