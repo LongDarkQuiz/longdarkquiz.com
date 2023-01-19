@@ -20,10 +20,10 @@
   --gap-md: 64px;
 
   /* Paddings */
-  --padding-2xs: 10px;
-  --padding-xs: 15px;
-  --padding-sm: 20px;
-  --padding-md: 32px;
+  --padding-2xs: 15px;
+  --padding-xs: 20px;
+  --padding-sm: 32px;
+  --padding-md: 53px;
   --padding-lg: 64px;
   --padding-xl: 76px;
 }

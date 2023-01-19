@@ -70,7 +70,7 @@ body {
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  padding: var(--padding-md) 0;
+  padding: var(--padding-sm) 0;
   align-items: center;
   justify-content: flex-start;
   gap: 8px;
@@ -154,7 +154,7 @@ body {
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  padding: 53px var(--padding-xl) var(--padding-lg);
+  padding: var(--padding-md) var(--padding-xl) var(--padding-lg);
   align-items: center;
   justify-content: flex-start;
   gap: var(--gap-md);
@@ -165,7 +165,6 @@ body {
 .frame-example-question.animate,
 .frame-how-to-play.animate,
 .frame-submit-a-question.animate,
-.frame-the-time-period.animate,
 .frame-what-our-players-think.animate {
   animation: 1s ease 0s 1 normal forwards slide-in-bottom;
 }
@@ -195,18 +194,6 @@ body {
   width: 291px;
   height: 42px;
   flex-shrink: 0;
-}
-.frame-the-time-period {
-  align-self: stretch;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  padding: var(--padding-2xs) var(--padding-xl) var(--padding-lg);
-  align-items: center;
-  justify-content: flex-start;
-  gap: var(--gap-md);
-  opacity: 0;
-  text-align: left;
 }
 .place-a-stake {
   margin: 0;
@@ -261,7 +248,7 @@ body {
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  padding: var(--padding-2xs) var(--padding-xl) var(--padding-lg);
+  padding: var(--padding-md) var(--padding-xl) var(--padding-lg);
   align-items: center;
   justify-content: flex-start;
   gap: var(--gap-md);
@@ -323,7 +310,7 @@ body {
 .primary-default {
   cursor: pointer;
   border: 0;
-  padding: 19px var(--padding-md);
+  padding: 19px var(--padding-sm);
   background-color: var(--color-orange);
   border-radius: 32px;
   width: 327px;
@@ -334,7 +321,7 @@ body {
   height: 704px;
   flex-shrink: 0;
   overflow: hidden;
-  padding: var(--padding-2xs) var(--padding-xl) var(--padding-lg);
+  padding: var(--padding-md) var(--padding-xl) var(--padding-lg);
   justify-content: flex-start;
   gap: var(--gap-md);
   opacity: 0;
@@ -394,14 +381,14 @@ body {
   border: 1px dashed var(--white);
   box-sizing: border-box;
   width: 595px;
-  padding: var(--padding-xs) 0 var(--padding-sm);
+  padding: var(--padding-2xs) 0 var(--padding-xs);
   justify-content: center;
   gap: 25px;
   color: var(--color-orange);
 }
 .frame-submit-a-question {
   align-self: stretch;
-  padding: var(--padding-2xs) var(--padding-xl) var(--padding-lg);
+  padding: var(--padding-md) var(--padding-xl) var(--padding-lg);
   justify-content: flex-start;
   gap: var(--gap-md);
   opacity: 0;
@@ -430,7 +417,7 @@ body {
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  padding: var(--padding-xs) 0 var(--padding-sm);
+  padding: var(--padding-2xs) 0 var(--padding-xs);
   align-items: center;
   justify-content: center;
   font-size: var(--font-size-base);
@@ -446,7 +433,7 @@ body {
 }
 .frame-what-our-players-think {
   align-self: stretch;
-  padding: var(--padding-2xs) var(--padding-xl) var(--padding-lg);
+  padding: var(--padding-md) var(--padding-xl) var(--padding-lg);
   gap: var(--gap-md);
   opacity: 0;
 }
@@ -454,7 +441,7 @@ body {
   position: relative;
   background-color: #000;
   width: 100%;
-  padding: var(--padding-2xs);
+  padding: 10px;
   box-sizing: border-box;
   gap: 24px;
   text-align: center;
@@ -490,20 +477,13 @@ body {
     font-size: var(--font-size-xs);
   }
   .frame-aim-of-the-game {
-    padding-left: var(--padding-sm);
-    padding-right: var(--padding-sm);
-    gap: var(--gap-sm);
-  }
-  .the-time-period {
-    font-size: var(--font-size-base);
-  }
-  .frame-the-time-period {
-    padding-left: var(--padding-sm);
-    padding-right: var(--padding-sm);
+    padding-left: var(--padding-xs);
+    padding-right: var(--padding-xs);
     gap: var(--gap-sm);
   }
   .example-question,
-  .place-a-stake {
+  .place-a-stake,
+  .the-time-period {
     font-size: var(--font-size-base);
   }
   .image-2-icon {
@@ -514,8 +494,8 @@ body {
     font-size: var(--font-size-xs);
   }
   .frame-example-question {
-    padding-left: var(--padding-sm);
-    padding-right: var(--padding-sm);
+    padding-left: var(--padding-xs);
+    padding-right: var(--padding-xs);
     gap: var(--gap-sm);
   }
   .scan-this-qr {
@@ -540,8 +520,8 @@ body {
   .frame-how-to-play {
     height: 220px;
     border-radius: 0;
-    padding-left: var(--padding-sm);
-    padding-right: var(--padding-sm);
+    padding-left: var(--padding-xs);
+    padding-right: var(--padding-xs);
     gap: var(--gap-sm);
   }
   .submit-a-question {
@@ -557,8 +537,8 @@ body {
     width: 320px;
   }
   .frame-submit-a-question {
-    padding-left: var(--padding-sm);
-    padding-right: var(--padding-sm);
+    padding-left: var(--padding-xs);
+    padding-right: var(--padding-xs);
     gap: var(--gap-sm);
   }
   .what-our-players {
@@ -571,7 +551,7 @@ body {
     width: 330px;
   }
   .frame-what-our-players-think {
-    padding-left: var(--padding-sm);
-    padding-right: var(--padding-sm);
+    padding-left: var(--padding-xs);
+    padding-right: var(--padding-xs);
   }
 }
