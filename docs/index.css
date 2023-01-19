@@ -207,6 +207,7 @@ body {
   object-fit: cover;
 }
 .as-this-question {
+  margin: 0;
   align-self: stretch;
   position: relative;
   font-size: var(--font-size-base);
