@@ -462,7 +462,7 @@ body {
     max-height: 340px;
   }
   .as-this-question {
-    font-size: var(--font-size-sm);
+    font-size: var(--font-size-xs);
   }
   .example-question-parent {
     padding-left: var(--padding-sm);
