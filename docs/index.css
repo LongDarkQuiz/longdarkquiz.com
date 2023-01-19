@@ -1,3 +1,21 @@
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes slide-in-bottom {
+  0% {
+    transform: translateY(200px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 body {
   margin: 0;
   line-height: normal;
@@ -8,6 +26,10 @@ body {
   height: 579px;
   flex-shrink: 0;
   object-fit: cover;
+  opacity: 0;
+}
+.hero-small-1-icon.animate {
+  animation: 1s ease 0s 1 normal forwards fade-in;
 }
 .the-long-dark {
   margin: 0;
@@ -26,7 +48,11 @@ body {
   padding: 0 0 22px;
   align-items: flex-start;
   justify-content: center;
+  opacity: 0;
   font-size: 80px;
+}
+.the-long-dark-game-wrapper.animate {
+  animation: 1s ease 0.1s 1 normal forwards fade-in;
 }
 .a-game,
 .for-future-thinking {
@@ -48,8 +74,12 @@ body {
   align-items: center;
   justify-content: flex-start;
   gap: 8px;
+  opacity: 0;
   font-size: 35px;
   font-family: var(--font-share-tech-mono);
+}
+.a-game-parent.animate {
+  animation: 1s ease 0.4s 1 normal forwards fade-in;
 }
 .g322-icon {
   position: absolute;
@@ -77,6 +107,10 @@ body {
   padding: 30px 67px;
   align-items: center;
   justify-content: center;
+  opacity: 0;
+}
+.layer1-wrapper.animate {
+  animation: 2s ease 0s 1 normal forwards fade-in;
 }
 .aim-of-the {
   margin: 0;
@@ -115,7 +149,7 @@ body {
   font-size: var(--font-size-base);
   text-align: center;
 }
-.group-parent {
+.frame-aim-of-the-game {
   align-self: stretch;
   overflow: hidden;
   display: flex;
@@ -124,7 +158,16 @@ body {
   align-items: center;
   justify-content: flex-start;
   gap: var(--gap-md);
+  opacity: 0;
   text-align: left;
+}
+.frame-aim-of-the-game.animate,
+.frame-example-question.animate,
+.frame-how-to-play.animate,
+.frame-submit-a-question.animate,
+.frame-the-time-period.animate,
+.frame-what-our-players-think.animate {
+  animation: 1s ease 0s 1 normal forwards slide-in-bottom;
 }
 .the-time-period {
   margin: 0;
@@ -153,7 +196,7 @@ body {
   height: 42px;
   flex-shrink: 0;
 }
-.group-container {
+.frame-the-time-period {
   align-self: stretch;
   overflow: hidden;
   display: flex;
@@ -162,6 +205,7 @@ body {
   align-items: center;
   justify-content: flex-start;
   gap: var(--gap-md);
+  opacity: 0;
   text-align: left;
 }
 .place-a-stake {
@@ -212,7 +256,7 @@ body {
   position: relative;
   font-size: var(--font-size-base);
 }
-.example-question-parent {
+.frame-example-question {
   align-self: stretch;
   overflow: hidden;
   display: flex;
@@ -221,6 +265,7 @@ body {
   align-items: center;
   justify-content: flex-start;
   gap: var(--gap-md);
+  opacity: 0;
 }
 .vector-icon {
   position: absolute;
@@ -268,7 +313,7 @@ body {
   color: var(--white);
   text-align: center;
 }
-.group-parent1,
+.frame-how-to-play,
 .primary-default {
   display: flex;
   flex-direction: column;
@@ -284,7 +329,7 @@ body {
   width: 327px;
   justify-content: center;
 }
-.group-parent1 {
+.frame-how-to-play {
   align-self: stretch;
   height: 704px;
   flex-shrink: 0;
@@ -292,6 +337,7 @@ body {
   padding: var(--padding-2xs) var(--padding-xl) var(--padding-lg);
   justify-content: flex-start;
   gap: var(--gap-md);
+  opacity: 0;
 }
 .get-ready-for,
 .submit-a-question {
@@ -336,8 +382,8 @@ body {
   line-height: 30px;
   color: var(--color-gray);
 }
-.qa-writing-parent,
-.submit-a-question-parent {
+.frame-submit-a-question,
+.qa-writing-parent {
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -353,11 +399,12 @@ body {
   gap: 25px;
   color: var(--color-orange);
 }
-.submit-a-question-parent {
+.frame-submit-a-question {
   align-self: stretch;
   padding: var(--padding-2xs) var(--padding-xl) var(--padding-lg);
   justify-content: flex-start;
   gap: var(--gap-md);
+  opacity: 0;
   font-size: var(--font-size-base);
 }
 .what-our-players {
@@ -389,18 +436,19 @@ body {
   font-size: var(--font-size-base);
   color: var(--color-gray);
 }
-.web-background,
-.what-our-players-think-parent {
+.frame-what-our-players-think,
+.web-background {
   overflow: hidden;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
 }
-.what-our-players-think-parent {
+.frame-what-our-players-think {
   align-self: stretch;
   padding: var(--padding-2xs) var(--padding-xl) var(--padding-lg);
   gap: var(--gap-md);
+  opacity: 0;
 }
 .web-background {
   position: relative;
@@ -441,7 +489,7 @@ body {
   .have-fun-answering-container {
     font-size: var(--font-size-xs);
   }
-  .group-parent {
+  .frame-aim-of-the-game {
     padding-left: var(--padding-sm);
     padding-right: var(--padding-sm);
     gap: var(--gap-sm);
@@ -449,7 +497,7 @@ body {
   .the-time-period {
     font-size: var(--font-size-base);
   }
-  .group-container {
+  .frame-the-time-period {
     padding-left: var(--padding-sm);
     padding-right: var(--padding-sm);
     gap: var(--gap-sm);
@@ -465,7 +513,7 @@ body {
   .as-this-question {
     font-size: var(--font-size-xs);
   }
-  .example-question-parent {
+  .frame-example-question {
     padding-left: var(--padding-sm);
     padding-right: var(--padding-sm);
     gap: var(--gap-sm);
@@ -489,7 +537,7 @@ body {
     width: 250px;
     height: 50px;
   }
-  .group-parent1 {
+  .frame-how-to-play {
     height: 220px;
     border-radius: 0;
     padding-left: var(--padding-sm);
@@ -508,7 +556,7 @@ body {
   .qa-writing-parent {
     width: 320px;
   }
-  .submit-a-question-parent {
+  .frame-submit-a-question {
     padding-left: var(--padding-sm);
     padding-right: var(--padding-sm);
     gap: var(--gap-sm);
@@ -522,7 +570,7 @@ body {
   .get-ready-for-the-ga-wrapper {
     width: 330px;
   }
-  .what-our-players-think-parent {
+  .frame-what-our-players-think {
     padding-left: var(--padding-sm);
     padding-right: var(--padding-sm);
   }

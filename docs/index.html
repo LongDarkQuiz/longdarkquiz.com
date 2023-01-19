@@ -18,20 +18,26 @@
   </head>
   <body>
     <div class="web-background">
-      <img class="hero-small-1-icon" alt="" src="public/hero-small-1@2x.png" />
-      <div class="the-long-dark-game-wrapper">
+      <img
+        class="hero-small-1-icon"
+        alt=""
+        loading="eager"
+        src="public/hero-small-1@2x.png"
+        data-animate-on-scroll
+      />
+      <div class="the-long-dark-game-wrapper" data-animate-on-scroll>
         <h1 class="the-long-dark">Long Dark Quiz</h1>
       </div>
-      <div class="a-game-parent">
+      <div class="a-game-parent" data-animate-on-scroll>
         <p class="a-game">A game</p>
         <p class="for-future-thinking">For future thinking antagonists</p>
       </div>
-      <div class="layer1-wrapper">
+      <div class="layer1-wrapper" data-animate-on-scroll>
         <div class="layer1">
           <img class="g322-icon" alt="" src="public/g322.svg" />
         </div>
       </div>
-      <div class="group-parent">
+      <div class="frame-aim-of-the-game" data-animate-on-scroll>
         <div class="aim-of-the-game-parent">
           <h2 class="aim-of-the">Aim of the game</h2>
           <img class="alien-1-traced" alt="" src="public/alien-1-traced.svg" />
@@ -46,7 +52,7 @@
           >
         </p>
       </div>
-      <div class="group-container">
+      <div class="frame-the-time-period" data-animate-on-scroll>
         <div class="the-time-period-parent">
           <h2 class="the-time-period">The time period</h2>
           <img
@@ -67,7 +73,7 @@
           >
         </p>
       </div>
-      <div class="group-container">
+      <div class="frame-the-time-period" data-animate-on-scroll>
         <div class="place-a-stake-parent">
           <h2 class="place-a-stake">Place a stake</h2>
           <img
@@ -83,7 +89,7 @@
           win the game, the pot and ultimate bragging rights.
         </p>
       </div>
-      <div class="example-question-parent">
+      <div class="frame-example-question" data-animate-on-scroll>
         <h2 class="example-question">Example question</h2>
         <img class="image-2-icon" alt="" src="public/image-2@2x.png" />
         <p class="as-this-question">
@@ -93,7 +99,7 @@
           correct answer and showing the games scoreboard.
         </p>
       </div>
-      <div class="group-parent1">
+      <div class="frame-how-to-play" data-animate-on-scroll>
         <div class="how-to-play-parent">
           <h2 class="place-a-stake">How to play</h2>
           <img class="vector-icon" alt="" src="public/vector.svg" />
@@ -109,7 +115,7 @@
           <label class="register-here">Register here</label>
         </button>
       </div>
-      <div class="submit-a-question-parent">
+      <div class="frame-submit-a-question" data-animate-on-scroll>
         <h2 class="submit-a-question">Submit a question</h2>
         <h3 class="get-ready-for">So you think you’re funny?!</h3>
         <p class="wow-us">
@@ -138,7 +144,7 @@
           </p>
         </div>
       </div>
-      <div class="what-our-players-think-parent">
+      <div class="frame-what-our-players-think" data-animate-on-scroll>
         <h2 class="what-our-players">What our players think</h2>
         <div class="get-ready-for-the-ga-wrapper">
           <p class="get-ready-for-container">
@@ -166,6 +172,25 @@
         primaryDefault.addEventListener("click", function () {
           window.open("https://game.dev.ldq.microcubetech.com:3443/");
         });
+      }
+      var scrollAnimElements = document.querySelectorAll("[data-animate-on-scroll]");
+      var observer = new IntersectionObserver(
+        (entries) => {
+          for (const entry of entries) {
+            if (entry.isIntersecting || entry.intersectionRatio > 0) {
+              const targetElement = entry.target;
+              targetElement.classList.add("animate");
+              observer.unobserve(targetElement);
+            }
+          }
+        },
+        {
+          threshold: 0.15,
+        }
+      );
+      
+      for (let i = 0; i < scrollAnimElements.length; i++) {
+        observer.observe(scrollAnimElements[i]);
       }
       </script>
   </body>
