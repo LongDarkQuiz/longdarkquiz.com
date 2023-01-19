@@ -16,6 +16,7 @@
   --color-orange: #fc9c0d;
 
   /* Gaps */
+  --gap-sm: 32px;
   --gap-md: 64px;
 
   /* Paddings */

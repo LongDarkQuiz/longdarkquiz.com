@@ -375,28 +375,38 @@ body {
   letter-spacing: 0.29px;
   line-height: 30px;
 }
-.get-ready-for-the-ga-wrapper,
-.web-background {
+.get-ready-for-the-ga-wrapper {
+  border: 1px dashed var(--white);
+  box-sizing: border-box;
+  width: 595px;
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  box-sizing: border-box;
-  align-items: center;
-}
-.get-ready-for-the-ga-wrapper {
-  border: 1px dashed var(--white);
-  width: 595px;
   padding: var(--padding-xs) 0 var(--padding-sm);
+  align-items: center;
   justify-content: center;
   font-size: var(--font-size-base);
   color: var(--color-gray);
+}
+.web-background,
+.what-our-players-think-parent {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.what-our-players-think-parent {
+  align-self: stretch;
+  padding: var(--padding-2xs) var(--padding-xl) var(--padding-lg);
+  gap: var(--gap-md);
 }
 .web-background {
   position: relative;
   background-color: #000;
   width: 100%;
   padding: var(--padding-2xs);
-  justify-content: flex-start;
+  box-sizing: border-box;
   gap: 24px;
   text-align: center;
   font-size: var(--font-size-lg);
@@ -433,6 +443,7 @@ body {
   .group-parent {
     padding-left: var(--padding-sm);
     padding-right: var(--padding-sm);
+    gap: var(--gap-sm);
   }
   .the-time-period {
     font-size: var(--font-size-base);
@@ -440,6 +451,7 @@ body {
   .group-container {
     padding-left: var(--padding-sm);
     padding-right: var(--padding-sm);
+    gap: var(--gap-sm);
   }
   .example-question,
   .place-a-stake {
@@ -455,14 +467,26 @@ body {
   .example-question-parent {
     padding-left: var(--padding-sm);
     padding-right: var(--padding-sm);
+    gap: var(--gap-sm);
   }
-  .or,
   .scan-this-qr {
     font-size: var(--font-size-sm);
+    display: none;
+  }
+  .api-page-qr-code-generator-c-icon {
+    display: none;
+    width: 100%;
+  }
+  .or {
+    font-size: var(--font-size-sm);
+    display: none;
   }
   .group-parent1 {
+    height: 220px;
+    border-radius: 0;
     padding-left: var(--padding-sm);
     padding-right: var(--padding-sm);
+    gap: var(--gap-sm);
   }
   .submit-a-question {
     font-size: var(--font-size-base);
@@ -474,11 +498,12 @@ body {
     font-size: var(--font-size-sm);
   }
   .qa-writing-parent {
-    width: 390px;
+    width: 320px;
   }
   .submit-a-question-parent {
     padding-left: var(--padding-sm);
     padding-right: var(--padding-sm);
+    gap: var(--gap-sm);
   }
   .what-our-players {
     font-size: var(--font-size-base);
@@ -487,6 +512,10 @@ body {
     font-size: var(--font-size-sm);
   }
   .get-ready-for-the-ga-wrapper {
-    width: 390px;
+    width: 330px;
+  }
+  .what-our-players-think-parent {
+    padding-left: var(--padding-sm);
+    padding-right: var(--padding-sm);
   }
 }
