@@ -110,7 +110,7 @@ body {
   opacity: 0;
 }
 .layer1-wrapper.animate {
-  animation: 2s ease 0s 1 normal forwards fade-in;
+  animation: 3s ease 0.2s 1 normal forwards fade-in;
 }
 .aim-of-the {
   margin: 0;
@@ -161,12 +161,8 @@ body {
   opacity: 0;
   text-align: left;
 }
-.frame-aim-of-the-game.animate,
-.frame-example-question.animate,
-.frame-how-to-play.animate,
-.frame-submit-a-question.animate,
-.frame-what-our-players-think.animate {
-  animation: 1s ease 0s 1 normal forwards slide-in-bottom;
+.frame-aim-of-the-game.animate {
+  animation: 1.5s ease-out 0s 1 normal forwards slide-in-bottom;
 }
 .the-time-period {
   margin: 0;
@@ -221,6 +217,25 @@ body {
   width: 251px;
   height: 37px;
   flex-shrink: 0;
+}
+.frame-place-a-stake {
+  align-self: stretch;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  padding: var(--padding-md) var(--padding-xl) var(--padding-lg);
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-md);
+  opacity: 0;
+  text-align: left;
+}
+.frame-example-question.animate,
+.frame-how-to-play.animate,
+.frame-place-a-stake.animate,
+.frame-submit-a-question.animate,
+.frame-what-our-players-think.animate {
+  animation: 1.5s ease 0s 1 normal forwards slide-in-bottom;
 }
 .example-question {
   margin: 0;
@@ -481,9 +496,16 @@ body {
     padding-right: var(--padding-xs);
     gap: var(--gap-sm);
   }
-  .example-question,
   .place-a-stake,
   .the-time-period {
+    font-size: var(--font-size-base);
+  }
+  .frame-place-a-stake {
+    padding-left: var(--padding-xs);
+    padding-right: var(--padding-xs);
+    gap: var(--gap-sm);
+  }
+  .example-question {
     font-size: var(--font-size-base);
   }
   .image-2-icon {
