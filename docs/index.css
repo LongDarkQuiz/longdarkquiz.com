@@ -597,12 +597,13 @@ body {
   height: 3px;
   flex-shrink: 0;
 }
-.contact-hellomonkeynutstudio,
-.follow {
+.contact-hellomonkeynutstudio {
   margin: 0;
   position: relative;
+  cursor: pointer;
 }
 .follow {
+  margin: 0;
   position: absolute;
   top: 0;
   left: 0;

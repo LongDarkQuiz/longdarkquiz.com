@@ -226,7 +226,10 @@
       <div class="footer" data-animate-on-scroll>
         <div class="footer-child"></div>
         <div class="contact-hellomonkeynutstudio-parent">
-          <p class="contact-hellomonkeynutstudio">
+          <p
+            class="contact-hellomonkeynutstudio"
+            id="cONTACTHellomonkeynutstudio"
+          >
             <span class="set-a-duration"><b>CONTACT</b></span
             ><span class="set-a-duration"><b>&nbsp;</b></span
             ><span class="set-a-duration"
@@ -263,6 +266,15 @@
       if (primaryDefault) {
         primaryDefault.addEventListener("click", function () {
           window.open("https://long-dark-quiz.kickoffpages.com/");
+        });
+      }
+      
+      const cONTACTHellomonkeynutstudio = document.getElementById(
+        "cONTACTHellomonkeynutstudio"
+      );
+      if (cONTACTHellomonkeynutstudio) {
+        cONTACTHellomonkeynutstudio.addEventListener("click", function () {
+          window.location.href = "mailto:hello@monkeynutstudio.com";
         });
       }
       
