@@ -586,6 +586,7 @@ body {
   padding: var(--padding-xl) var(--padding-3xl) var(--padding-2xl);
   gap: 106px;
 }
+.footer.animate,
 .frame-what-our-players-think.animate {
   animation: 1.5s ease 0s 1 normal forwards slide-in-bottom;
 }
@@ -644,17 +645,14 @@ body {
   font-family: inherit;
   display: inline-block;
   width: 170px;
+  cursor: pointer;
 }
 .monkey-nuts-2023-wrapper {
   position: relative;
   width: 170px;
   height: 17px;
   flex-shrink: 0;
-  opacity: 0;
   text-align: center;
-}
-.monkey-nuts-2023-wrapper.animate {
-  animation: 1s ease 0s 1 normal forwards slide-in-bottom;
 }
 .footer,
 .web-background {
@@ -670,9 +668,6 @@ body {
   gap: 44px;
   opacity: 0;
   font-size: var(--font-size-2xs);
-}
-.footer.animate {
-  animation: 1.5s ease 0s 1 normal forwards slide-in-bottom;
 }
 .web-background {
   position: relative;
@@ -825,7 +820,7 @@ body {
     font-family: var(--font-inter);
   }
   .main-review-container {
-    width: 330px;
+    width: 320px;
   }
   .frame-what-our-players-think {
     padding-left: var(--padding-sm);

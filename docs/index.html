@@ -242,8 +242,8 @@
             />
           </div>
         </div>
-        <div class="monkey-nuts-2023-wrapper" data-animate-on-scroll>
-          <h2 class="monkey-nuts">Monkey Nuts © - 2023</h2>
+        <div class="monkey-nuts-2023-wrapper">
+          <h2 class="monkey-nuts" id="monkeyNuts">Monkey Nuts © - 2023</h2>
         </div>
       </div>
     </div>
@@ -260,6 +260,13 @@
       if (primaryDefault) {
         primaryDefault.addEventListener("click", function () {
           window.open("https://long-dark-quiz.kickoffpages.com/");
+        });
+      }
+      
+      var monkeyNuts = document.getElementById("monkeyNuts");
+      if (monkeyNuts) {
+        monkeyNuts.addEventListener("click", function () {
+          window.open("https://monkeynutsstudio.com/");
         });
       }
       var scrollAnimElements = document.querySelectorAll("[data-animate-on-scroll]");
