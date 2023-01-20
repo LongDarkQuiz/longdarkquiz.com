@@ -403,7 +403,6 @@ body {
   font-size: var(--font-size-lg);
 }
 .get-ready-for {
-  align-self: stretch;
   font-size: var(--font-size-sm);
   line-height: 40px;
   font-weight: 700;
@@ -420,11 +419,11 @@ body {
 .qa-writing,
 .wow-us {
   margin: 0;
+  align-self: stretch;
   position: relative;
   letter-spacing: 0.29px;
 }
 .wow-us {
-  align-self: stretch;
   opacity: 0;
 }
 .qa-writing {
@@ -432,20 +431,17 @@ body {
   line-height: 40px;
   font-weight: 700;
   font-family: inherit;
-  display: inline-block;
-  width: 595px;
 }
 .short-fire {
   font-family: var(--font-inter);
 }
 .q-length {
   margin: 0;
+  align-self: stretch;
   position: relative;
   letter-spacing: 0.29px;
   line-height: 30px;
   color: var(--color-gray-100);
-  display: inline-block;
-  width: 595px;
 }
 .frame-submit-a-question,
 .qa-writing-parent {
