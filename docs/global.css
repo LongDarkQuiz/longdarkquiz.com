@@ -16,14 +16,18 @@
   --color-orange: #fc9c0d;
 
   /* Gaps */
-  --gap-sm: 32px;
-  --gap-md: 64px;
+  --gap-xs: 8px;
+  --gap-sm: 10px;
+  --gap-md: 25px;
+  --gap-lg: 32px;
+  --gap-xl: 64px;
 
   /* Paddings */
-  --padding-2xs: 15px;
-  --padding-xs: 20px;
-  --padding-sm: 32px;
-  --padding-md: 53px;
-  --padding-lg: 64px;
-  --padding-xl: 76px;
+  --padding-2xs: 10px;
+  --padding-xs: 15px;
+  --padding-sm: 20px;
+  --padding-md: 32px;
+  --padding-lg: 53px;
+  --padding-xl: 64px;
+  --padding-2xl: 76px;
 }
