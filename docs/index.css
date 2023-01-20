@@ -608,15 +608,21 @@ body {
   left: 0;
   font-weight: 700;
 }
+.vector-container,
 .vector-icon3,
-.vector-icon4 {
+.vector-wrapper {
   position: absolute;
-  top: 35px;
+  top: 0;
   left: 0;
   width: 31px;
   height: 31px;
 }
-.vector-icon4 {
+.vector-container,
+.vector-wrapper {
+  top: 35px;
+  cursor: pointer;
+}
+.vector-container {
   left: 60px;
 }
 .follow-parent {
@@ -635,7 +641,7 @@ body {
   justify-content: center;
   gap: 147px;
 }
-.monkey-nuts {
+.monkey-nuts-studio {
   margin: 0;
   position: absolute;
   top: 0;
@@ -644,12 +650,12 @@ body {
   font-weight: 400;
   font-family: inherit;
   display: inline-block;
-  width: 170px;
+  width: 217px;
   cursor: pointer;
 }
-.monkey-nuts-2023-wrapper {
+.monkey-nuts-studio-2023-wrapper {
   position: relative;
-  width: 170px;
+  width: 217px;
   height: 17px;
   flex-shrink: 0;
   text-align: center;
@@ -839,7 +845,7 @@ body {
     padding-right: 0;
     gap: 60px;
   }
-  .monkey-nuts {
+  .monkey-nuts-studio {
     font-size: var(--font-size-3xs);
   }
   .footer {

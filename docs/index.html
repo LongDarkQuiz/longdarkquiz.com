@@ -235,15 +235,18 @@
           </p>
           <div class="follow-parent">
             <p class="follow">FOLLOW</p>
-            <img class="vector-icon3" alt="" src="public/vector3.svg" /><img
-              class="vector-icon4"
-              alt=""
-              src="public/vector4.svg"
-            />
+            <div class="vector-wrapper" id="frameContainer5">
+              <img class="vector-icon3" alt="" src="public/vector3.svg" />
+            </div>
+            <div class="vector-container" id="frameContainer6">
+              <img class="vector-icon3" alt="" src="public/vector4.svg" />
+            </div>
           </div>
         </div>
-        <div class="monkey-nuts-2023-wrapper">
-          <h2 class="monkey-nuts" id="monkeyNuts">Monkey Nuts © - 2023</h2>
+        <div class="monkey-nuts-studio-2023-wrapper">
+          <h2 class="monkey-nuts-studio" id="monkeyNutsStudio">
+            Monkey Nuts Studio © - 2023
+          </h2>
         </div>
       </div>
     </div>
@@ -263,9 +266,23 @@
         });
       }
       
-      var monkeyNuts = document.getElementById("monkeyNuts");
-      if (monkeyNuts) {
-        monkeyNuts.addEventListener("click", function () {
+      var frameContainer5 = document.getElementById("frameContainer5");
+      if (frameContainer5) {
+        frameContainer5.addEventListener("click", function () {
+          window.open("https://www.instagram.com/longdarkquiz/");
+        });
+      }
+      
+      var frameContainer6 = document.getElementById("frameContainer6");
+      if (frameContainer6) {
+        frameContainer6.addEventListener("click", function () {
+          window.open("https://www.facebook.com/Longdarkquiz");
+        });
+      }
+      
+      var monkeyNutsStudio = document.getElementById("monkeyNutsStudio");
+      if (monkeyNutsStudio) {
+        monkeyNutsStudio.addEventListener("click", function () {
           window.open("https://monkeynutsstudio.com/");
         });
       }
