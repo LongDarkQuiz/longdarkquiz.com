@@ -4,15 +4,17 @@
   --font-share-tech-mono: "Share Tech Mono";
 
   /* font sizes */
-  --font-size-xs: 14px;
-  --font-size-sm: 16px;
+  --font-size-3xs: 10px;
+  --font-size-2xs: 14px;
+  --font-size-xs: 16px;
+  --font-size-sm: 20px;
   --font-size-base: 22px;
   --font-size-lg: 30px;
   --font-size-xl: 40px;
 
   /* Colors */
   --white: #fff;
-  --color-gray: #f8f8f8;
+  --color-gray-100: #f8f8f8;
   --color-orange: #fc9c0d;
 
   /* Gaps */
@@ -23,11 +25,13 @@
   --gap-xl: 64px;
 
   /* Paddings */
+  --padding-3xs: 5px;
   --padding-2xs: 10px;
   --padding-xs: 15px;
   --padding-sm: 20px;
-  --padding-md: 32px;
-  --padding-lg: 53px;
-  --padding-xl: 64px;
-  --padding-2xl: 76px;
+  --padding-md: 22px;
+  --padding-lg: 32px;
+  --padding-xl: 53px;
+  --padding-2xl: 64px;
+  --padding-3xl: 76px;
 }
