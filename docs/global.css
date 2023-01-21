@@ -25,7 +25,8 @@
   --gap-xl: 64px;
 
   /* Paddings */
-  --padding-3xs: 5px;
+  --padding-4xs: 5px;
+  --padding-3xs: 8px;
   --padding-2xs: 10px;
   --padding-xs: 15px;
   --padding-sm: 20px;
@@ -34,4 +35,5 @@
   --padding-xl: 53px;
   --padding-2xl: 64px;
   --padding-3xl: 76px;
+  --padding-4xl: 150px;
 }
