@@ -162,7 +162,7 @@ body {
 }
 .frame-aim-of-the-game.animate,
 .frame-the-time-period.animate {
-  animation: 1.5s ease-out 0s 1 normal forwards slide-in-bottom;
+  animation: 1.5s ease-out 0.2s 1 normal forwards slide-in-bottom;
 }
 .tijmer-1-traced {
   position: absolute;
@@ -244,7 +244,7 @@ body {
   opacity: 0;
 }
 .frame-place-a-stake.animate {
-  animation: 1.5s ease 0s 1 normal forwards slide-in-bottom;
+  animation: 1.5s ease 0.2s 1 normal forwards slide-in-bottom;
 }
 .vector-icon {
   position: absolute;
@@ -370,7 +370,7 @@ body {
   text-align: center;
 }
 .frame-how-to-play.animate {
-  animation: 1.5s ease 0s 1 normal forwards slide-in-bottom;
+  animation: 1.5s ease 0.2s 1 normal forwards slide-in-bottom;
 }
 .write-a-question {
   margin: 0;
@@ -457,7 +457,7 @@ body {
   font-size: var(--font-size-base);
 }
 .frame-submit-a-question.animate {
-  animation: 1.5s ease 0s 1 normal forwards slide-in-bottom;
+  animation: 1.5s ease 0.2s 1 normal forwards slide-in-bottom;
 }
 .what-our-players {
   margin: 0;
@@ -576,7 +576,7 @@ body {
 }
 .footer.animate,
 .frame-what-our-players-think.animate {
-  animation: 1.5s ease 0s 1 normal forwards slide-in-bottom;
+  animation: 1.5s ease 0.2s 1 normal forwards slide-in-bottom;
 }
 .footer-child {
   align-self: stretch;
